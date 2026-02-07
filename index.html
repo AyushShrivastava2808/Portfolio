@@ -23,7 +23,6 @@
       overflow-x:hidden;
     }
 
-    /* ===== Animations ===== */
     @keyframes fadeUp{
       from{opacity:0;transform:translateY(40px)}
       to{opacity:1;transform:translateY(0)}
@@ -173,8 +172,7 @@
     body.gold{
       --gold:#6d5dfc;
     }
-  
-    /* ===== Interactive Extras ===== */
+
     .cursor{
       position:fixed;
       width:18px;height:18px;
@@ -228,8 +226,7 @@
       float:right;
       font-size:1.4rem;
     }
-  
-    /* ===== Boss-Level Effects ===== */
+
     .orb{
       position:fixed;
       width:320px;height:320px;
@@ -275,7 +272,6 @@
   </div>
 </header>
 
-<!-- ===== GOAT HERO STATS ===== -->
 <section>
   <div class="grid">
     <div class="card">
@@ -371,7 +367,6 @@
   </div>
 </section>
 
-<!-- ===== WHY HIRE ME ===== -->
 <section>
   <h2>Why Hire Me</h2>
   <div class="card">
@@ -387,7 +382,6 @@
   </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
 <section>
   <h2>What People Say</h2>
   <div class="grid">
@@ -402,7 +396,6 @@
   </div>
 </section>
 
-<!-- ===== CTA ===== -->
 <section style="text-align:center">
   <h2>Let’s Build Something Exceptional</h2>
   <p style="max-width:700px;margin:1rem auto;color:var(--muted)">
@@ -463,8 +456,6 @@
   },{threshold:0.15});
   document.querySelectorAll('section').forEach(s=>observer.observe(s));
 
-  // Counters
-  // Counters (final boss – reliable)
   const counters = document.querySelectorAll('.count');
   counters.forEach(counter => {
     let started = false;
@@ -492,11 +483,11 @@
     obs.observe(card);
   });
 
-  // Theme toggle
   document.querySelector('.theme-toggle').onclick=()=>{
     document.body.classList.toggle('gold');
   };
 </script>
 </body>
 </html>
+
 
